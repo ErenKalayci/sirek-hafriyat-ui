@@ -1,0 +1,118 @@
+.contact {
+  padding: 120px 6%;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+    url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact span {
+  color: #f59e0b;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.contact h2 {
+  font-size: 58px;
+  margin: 20px 0;
+}
+
+.contact p {
+  color: #d1d5db;
+  font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-buttons a {
+  padding: 18px 34px;
+  border-radius: 999px;
+  background: #f59e0b;
+  color: white;
+  font-weight: 900;
+}
+
+.contact-buttons .whatsapp {
+  background: transparent;
+  border: 1px solid #f59e0b;
+}
+
+.contact-info {
+  margin-top: 70px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 320px);
+  justify-content: center;
+  gap: 32px;
+}
+
+.info-card {
+  min-height: 220px;
+
+  padding: 38px 32px;
+  border-radius: 28px;
+
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  border-color: #f59e0b;
+}
+
+.info-card h4 {
+  color: #f59e0b;
+  font-size: 28px;
+  margin-bottom: 22px;
+}
+
+.info-card p {
+  color: #e5e7eb;
+  line-height: 1.9;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 80px 24px;
+  }
+
+  .contact h2 {
+    font-size: 38px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    min-height: auto;
+  }
+}
